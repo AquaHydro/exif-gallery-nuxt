@@ -1,3 +1,4 @@
+import { db } from '@nuxthub/db'
 import { eq } from 'drizzle-orm'
 import { useValidatedBody, useValidatedParams, z } from 'h3-zod'
 
@@ -44,7 +45,7 @@ export default defineEventHandler(async (event) => {
     if (!updatedPhoto.length)
       throw createError({ statusCode: 404, message: 'photo not found' })
 
-    await processPhotoTags(db, id, body.tags)
+    await processPhotoTags(id, body.tags)
 
     return updatedPhoto[0]
   }

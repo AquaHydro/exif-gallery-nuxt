@@ -112,7 +112,7 @@ pnpm dev
 > [!WARNING]
 > **重要**：Cloudflare D1 数据库在构建时无法连接数据库，迁移**不会自动运行**。您必须手动运行迁移来创建表结构。
 
-** 使用 GitHub Actions（推荐，自动化）**
+**使用 GitHub Actions（推荐，自动化）**
 
 项目已包含 `.github/workflows/migrate.yml` 文件，您可以：
 

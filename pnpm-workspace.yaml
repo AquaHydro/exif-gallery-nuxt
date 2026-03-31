@@ -1,4 +1,7 @@
 shellEmulator: true
+shamefully-hoist: true
+strict-peer-dependencies: false
+auto-install-peers: false
 
 trustPolicy: no-downgrade
 trustPolicyExclude:

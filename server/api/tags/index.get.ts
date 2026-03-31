@@ -1,3 +1,4 @@
+import { db } from '@nuxthub/db'
 import { desc, sql } from 'drizzle-orm'
 
 export default eventHandler(async (event) => {

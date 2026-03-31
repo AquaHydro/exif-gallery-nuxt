@@ -1,3 +1,4 @@
+import { db } from '@nuxthub/db'
 import { and, eq, like, sql } from 'drizzle-orm'
 
 export default eventHandler(async (event) => {

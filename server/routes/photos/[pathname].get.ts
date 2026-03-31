@@ -1,4 +1,4 @@
-import { blob } from 'hub:blob'
+import { blob } from '@nuxthub/blob'
 import { z } from 'zod'
 
 export default eventHandler(async (event) => {

@@ -9,9 +9,8 @@ export default antfu({
     'server/db/migrations/*',
     'app/components/ui/**/*',
   ],
-  overrides: {
-    typescript: {
-      'node/prefer-global/process': 'off',
-    },
+  rules: {
+    'node/prefer-global/process': 'off',
+    'e18e/prefer-static-regex': 'off',
   },
 })

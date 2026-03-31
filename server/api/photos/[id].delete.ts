@@ -1,5 +1,6 @@
+import { blob } from '@nuxthub/blob'
+import { db } from '@nuxthub/db'
 import { eq, inArray, sql } from 'drizzle-orm'
-import { blob } from 'hub:blob'
 
 export default eventHandler(async (event) => {
   await requireUserSession(event)

@@ -1,7 +1,7 @@
-import type { DBType } from './drizzle'
+import { db, schema } from '@nuxthub/db'
 import { eq, inArray, sql } from 'drizzle-orm'
 
-export async function processPhotoTags(db: DBType, photoId: string, tags: string | null | undefined) {
+export async function processPhotoTags(photoId: string, tags: string | null | undefined) {
   if (tags === undefined || tags === null)
     return
 
